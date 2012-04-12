@@ -23,7 +23,7 @@
   <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="hero-unit">
     <h1>Hello, world!</h1>
-	<p><?php
+	<br><p><?php
 	/**
 	 *
 	 * PHP 5
@@ -48,7 +48,7 @@
 
 	<?php
 		if (version_compare(PHP_VERSION, '5.2.8', '>=')):
-			echo '<span class="btn">';
+			echo '<span class="btn btn-success">';
 				echo __d('cake_dev', 'Your version of PHP is 5.2.8 or higher.');
 			echo '</span>';
 		else:
@@ -61,7 +61,7 @@
 	<p>
 		<?php
 			if (is_writable(TMP)):
-				echo '<span class="btn">';
+				echo '<span class="btn btn-success">';
 					echo __d('cake_dev', 'Your tmp directory is writable.');
 				echo '</span>';
 			else:
@@ -75,7 +75,7 @@
 		<?php
 			$settings = Cache::settings();
 			if (!empty($settings)):
-				echo '<span class="btn">';
+				echo '<span class="btn btn-success">';
 					echo __d('cake_dev', 'The %s is being used for core caching. To change the config edit APP/Config/core.php ', '<em>'. $settings['engine'] . 'Engine</em>');
 				echo '</span>';
 			else:
@@ -89,7 +89,7 @@
 		<?php
 			$filePresent = null;
 			if (file_exists(APP . 'Config' . DS . 'database.php')):
-				echo '<span class="btn">';
+				echo '<span class="btn btn-success">';
 					echo __d('cake_dev', 'Your database configuration file is present.');
 					$filePresent = true;
 				echo '</span>';
@@ -114,7 +114,7 @@
 	<p>
 		<?php
 			if ($connected && $connected->isConnected()):
-				echo '<span class="btn">';
+				echo '<span class="btn btn-success">';
 		 			echo __d('cake_dev', 'Cake is able to connect to the database.');
 				echo '</span>';
 			else:
@@ -127,8 +127,11 @@
 		?>
 	</p>
 	<?php endif;?></p>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    <p><h3>Editing this Page</h3>
+	To change the content of this page, modify: APP/View/Pages/home.ctp.<br /><br />
+	<p><h3>Information</h3>
+	This is just a simple CakePHP app with Twitter Bootstrap yo! Jquery included!<br /><br />
+ <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
   </div>
 
   <!-- Example row of columns -->
