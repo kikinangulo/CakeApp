@@ -38,13 +38,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
-		<script>
-			$(document).ready(function(){
-				$(".btn").click(function(){
-					$(".btn").fadeOut(500);
-				});
-			});
-		</script>
 </head>
 <body>
 	<div id="container">
