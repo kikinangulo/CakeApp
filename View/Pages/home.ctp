@@ -2,9 +2,18 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <h1>Hello, world!</h1><br>
+		<?php echo $this->element('RequirementChecker'); ?>
+        <p>This should serve as a place to retain a default CakePHP app WITH more bells and whistles pre-installed and configured than that of the default CakePHP app.
+
+		So far this default App includes:
+<ul>
+<li>		Twitter Bootstrap </li>
+<li>		Jquery 1.6.2 </li>
+<li>		New Homepage (That ACTUALLY makes sense, from Twitter Bootstrap)</li>
+</ul>		
+		</p>
+        <p><a class="btn btn-primary btn-large" href="https://github.com/alairock/CakeApp">Learn more &raquo;</a></p>
       </div>
 
       <!-- Example row of columns -->

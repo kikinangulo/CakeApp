@@ -30,8 +30,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('bootstrap.min');
+		echo $this->Html->script('jquery-1.7.2.min.js'); // This MUST go before bootstrap.min.js
 		echo $this->Html->script('bootstrap.min.js');
-		echo $this->Html->script('jquery-1.7.2.min.js');
 		
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -55,6 +55,22 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
+		<ul class="nav">
+		  <li class="dropdown">
+		    <a href="#"
+		          class="dropdown-toggle"
+		          data-toggle="dropdown">
+		          Account
+		          <b class="caret"></b>
+		    </a>
+		    <ul class="dropdown-menu">
+		    <li><a href="#">Preferences</a></li>
+			<li><a href="#">Security</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Login</a></li>
+		    </ul>
+		  </li>
+		</ul>
         </div>
       </div>
     </div>
