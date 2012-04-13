@@ -65,7 +65,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'local',
 		'password' => 'local',
-		'database' => 'codafire',
+		'database' => 'cakeapp',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
