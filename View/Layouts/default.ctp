@@ -38,7 +38,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+<body style="padding-top:45px">
 	<div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
